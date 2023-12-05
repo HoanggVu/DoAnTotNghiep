@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_view_new_profile_user"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/avt_default"
+                android:layout_marginBottom="5dp"/>
+            <ImageButton
+                android:id="@+id/img_search_new_image_btn"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/baseline_search_24"
+                app:tint="@color/blue"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_rounded_corner"
+                android:backgroundTint="@color/light_blue"
+                android:elevation="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="THÔNG TIN CÁ NHÂN"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Họ Và Tên:"
+                    android:layout_margin="15dp"
+                    android:textSize="16dp"/>
+                <EditText
+                    android:id="@+id/edt_profile_user_new_ho_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edit_text_rounded_corner"
+                    android:elevation="5dp"
+                    android:hint="Họ Và Tên"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:padding="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày Sinh:"
+                    android:layout_margin="15dp"
+                    android:textSize="16dp"/>
+                <EditText
+                    android:id="@+id/edt_profile_user_new_ngay_sinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edit_text_rounded_corner"
+                    android:elevation="5dp"
+                    android:hint="Ngày Sinh"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:padding="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giới Tính:"
+                    android:layout_margin="15dp"
+                    android:textSize="16dp"/>
+                <EditText
+                    android:id="@+id/edt_profile_user_new_gioi_tinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edit_text_rounded_corner"
+                    android:elevation="5dp"
+                    android:hint="Giới Tính"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:padding="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số Điện Thoại:"
+                    android:layout_margin="15dp"
+                    android:textSize="16dp"/>
+                <EditText
+                    android:id="@+id/edt_profile_user_new_sdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edit_text_rounded_corner"
+                    android:elevation="5dp"
+                    android:hint="Điện Thoại"
+                    android:inputType="phone"
+                    android:minHeight="48dp"
+                    android:padding="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Địa Chỉ:"
+                    android:layout_margin="15dp"
+                    android:textSize="16dp"/>
+                <EditText
+                    android:id="@+id/edt_profile_user_new_dia_chi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_rounded_corner"
+                    android:elevation="5dp"
+                    android:hint="Địa Chỉ"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp">
+                <Button
+                    android:id="@+id/btn_accept_new_profile_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Xác Nhận"
+                    android:textSize="20dp"
+                    android:background="@drawable/round_btn"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Doctor.InfoUserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_back_info_user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/baseline_arrow_back_24"
+            android:backgroundTint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông Tin Bệnh Nhân"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_view_doctor_profile_user"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/cirular_bg"
+                android:backgroundTint="@color/blue"
+                android:src="@drawable/baseline_person_24"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_rounded_corner"
+                android:backgroundTint="@color/light_blue"
+                android:elevation="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="THÔNG TIN CÁ NHÂN"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Họ và Tên:"
+                    android:layout_margin="15dp"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/tv_doctor_profile_user_ho_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edit_text_rounded_corner"
+                    android:hint="Họ và Tên"
+                    android:minHeight="48dp"
+                    android:padding="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày Sinh:"
+                    android:layout_margin="15dp"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/tv_doctor_profile_user_ngay_sinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edit_text_rounded_corner"
+                    android:hint="Ngày Sinh"
+                    android:minHeight="48dp"
+                    android:padding="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giới Tính:"
+                    android:layout_margin="15dp"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/tv_doctor_profile_user_gioi_tinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edit_text_rounded_corner"
+                    android:hint="Giới Tính"
+                    android:minHeight="48dp"
+                    android:padding="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số Điện Thoại:"
+                    android:layout_margin="15dp"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/tv_doctor_profile_user_sdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/edit_text_rounded_corner"
+                    android:hint="Điện Thoại"
+                    android:minHeight="48dp"
+                    android:padding="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Địa Chỉ:"
+                    android:layout_margin="15dp"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/tv_doctor_profile_user_dia_chi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_rounded_corner"
+                    android:hint="Địa Chỉ"
+                    android:minHeight="48dp"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "810637437070",
+    "project_id": "app-booking-es",
+    "storage_bucket": "app-booking-es.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810637437070:android:b9e458fca5b0ba738cc1df",
+        "android_client_info": {
+          "package_name": "com.example.benhnhan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW8fyFLmqXAsb6j7PMxbic9iJQkDsr5g0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810637437070:android:dee014fa61168a8a8cc1df",
+        "android_client_info": {
+          "package_name": "com.example.bookingcalender"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW8fyFLmqXAsb6j7PMxbic9iJQkDsr5g0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810637437070:android:3be786f97aad1f588cc1df",
+        "android_client_info": {
+          "package_name": "com.example.test_do_an"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW8fyFLmqXAsb6j7PMxbic9iJQkDsr5g0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

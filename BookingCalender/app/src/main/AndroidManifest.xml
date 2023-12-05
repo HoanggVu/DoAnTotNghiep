@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".FirebaseCloudMessaging.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BookingCalender"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="tiramisu">
+        <activity
+            android:name=".Authentication.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.InfoUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.InfoBacSiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.InfoDoctorActivity"
+            android:exported="false"
+            android:label="@string/title_activity_info_doctor" />
+        <activity
+            android:name=".User.NewProfileUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.NewProfileDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.UpdateLichKhamActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".FirebaseCloudMessaging.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".User.InfoPhieuThanhToanUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.ThanhTienActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.InfoPhieuThanhToanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.PhieuThanhToanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.TaoLichLamViecActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.InfoUserBenhAnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.InfoUserDatLichActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.InfoBenhAnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.BenhAnActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.InfoKhamBenhActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.InfoLichKhamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.InfoDatLichActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.DatLichActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.LichKhamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.DatLichThoiGianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.DatLichBacSiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.SearchDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.UpdateLichLamViecActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.LichLamViecActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.SearchDichVuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.InfoBookingCalenderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.UpdateProfileUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.UpdateProfileDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhPhuKhoa.UngThuAmDaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhPhuKhoa.UngThuAmHoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhPhuKhoa.UNangBuongTrungActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhPhuKhoa.PolypCoTuCungActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhPhuKhoa.UXoTuCungActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhPhuKhoa.UngThuTuCungActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhPhuKhoa.ViemAmDaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhXaHoi.HaCamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhXaHoi.HIVActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhXaHoi.MunRopSinhDucActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhXaHoi.BenhLauActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhXaHoi.SuiMaoGaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhNamKhoa.TinhTrungYeuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhNamKhoa.RoiLoanXuatTinhActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhNamKhoa.ViemDuongTietNieuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhNamKhoa.HepBaoQuyDauActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhNamKhoa.RoiLoanCuongDuongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhNamKhoa.ViemTuyenTienLietActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhNamKhoa.ViemBangQuangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BenhNamKhoa.ViemTinhHoanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.UserSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.DatLichDichVuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.UserAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor.DoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.RegisterDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.DoctorAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.DichVuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.HomeAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddDichVuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
